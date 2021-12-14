@@ -56,7 +56,7 @@ const bitapSearchLite = (str: string, ptrn: string) => {
         // // // // // // 2 = 0010
         // // // // // // // BITWISE OR JOIN OCCURS HERE
         // // // // // // 3 = 0011
-        // // 5. Shifts the 1 bit over to the left by 1 place
+        // // 5. Shifts 1 bit over to the left by 1 place
         // // // Examples for 3 iterations:
         // // // Iteration 1 Value of i starts at 0
         // // // // Bit: 0001
@@ -68,7 +68,7 @@ const bitapSearchLite = (str: string, ptrn: string) => {
         // // // // Bit: 0100
         // // // // Char: 4
         // Labels for reference above.
-        //                 1.           2.             3.				  4.    5.
+        //                 1.           2.             3.			 4.    5.
         patternMask[ptrn.charCodeAt(i)] = patternMask[ptrn.charCodeAt(i)] | (1 << i);  
     }
 
