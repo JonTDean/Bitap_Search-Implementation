@@ -68,7 +68,7 @@ const bitapSearchLite = (str: string, ptrn: string) => {
         // // // // Bit: 0100
         // // // // Char: 4
         // Labels for reference above.
-        //                 1.           2.             3.			 4.    5.
+        //                 1.           2.             3.		 4.    5.
         patternMask[ptrn.charCodeAt(i)] = patternMask[ptrn.charCodeAt(i)] | (1 << i);  
     }
 
